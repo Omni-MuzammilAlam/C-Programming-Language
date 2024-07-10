@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    for (i = 1; i <= 10; i++) {
+        for (j = 1; j <= 12; j++) {
+            if (j == 1 || i==1&&j<=5|| j==7&&i==6|| i<=4&&j==4&&j==1 ||  i<=6&&j==6|| j==6&&i==1 || j==8&&i<=6 ||j>8&&j<=12&&i==1 ||j==12 )
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
