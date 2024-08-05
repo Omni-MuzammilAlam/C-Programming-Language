@@ -79,5 +79,5 @@ int main()
 
     checktypecard(valid, length, cardnumber);
 
-    return 0;
+    return  0;
 } 
