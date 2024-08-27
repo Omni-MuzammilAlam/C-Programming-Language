@@ -70,7 +70,7 @@ int main()
     if (length < 13)
     {
         printf("INVALID\n");
-        return  0;
+        return 0;
     }
 
     int result = evensum(cardnumber) + oddsum(cardnumber);
@@ -79,5 +79,5 @@ int main()
 
     checktypecard(valid, length, cardnumber);
 
-    return  0;
-} 
+    return 0;
+}
