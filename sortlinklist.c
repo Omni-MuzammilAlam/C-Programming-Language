@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
     node *list = NULL;
 
     // For each command-line argument
+    
     for (int i = 1; i < argc; i++)
     {
         // Convert argument to int
