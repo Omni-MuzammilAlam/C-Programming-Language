@@ -6,11 +6,14 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 # Load a sample picture and learn how to recognize it.
-known_image = face_recognition.load_image_file("face.jpg")
+known_image = face_recognition.load_image_file(r"C:\Users\lkj\OneDrive\Desktop\CS50\PYTHON\facespy\image.png")
+# // image ot be trained on 
 encoding = face_recognition.face_encodings(known_image)[0]
 
 # Load an image with unknown faces
-unknown_image = face_recognition.load_image_file("faces.jpg")
+unknown_image = face_recognition.load_image_file("C:\\Users\\lkj\\OneDrive\\Desktop\\CS50\\PYTHON\\facespy\\faces.jpg")
+#  the whole loads of images to get recognized
+
 
 # Find all the faces and face encodings in the unknown image
 face_locations = face_recognition.face_locations(unknown_image)
@@ -42,3 +45,7 @@ del draw
 
 # Display the resulting image
 pil_image.show()
+pil_image.save(r"C:\Users\lkj\OneDrive\Desktop\CS50\PYTHON\facespy\recognized.jpg")
+
+
+# takes a little bit of time
